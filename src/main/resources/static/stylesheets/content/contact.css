@@ -1,0 +1,78 @@
+.sec_tit_contact {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-family: 'Noto Sans KR';
+    font-weight: 500;
+    line-height: 1;
+}
+
+.basic_box.info {
+    border-bottom: 0;
+}
+
+.basic_box.contact {
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.basic_box.info .box:first-child{
+    height: 565px;
+}
+
+.basic_box.info > .box .level {
+    float: left;
+    position: relative;
+    height: 200px;
+    padding: 65px 0 0 40px;
+    overflow: hidden;
+}
+
+.basic_box.info > ul {
+    padding: 40px 0;
+}
+
+.basic_box.info > .box > ul {
+    padding: 54px 0 0 280px;
+}
+
+.basic_box.info > .box > ul > li > span.devel {
+    margin-right: 0;
+    color: #333;
+    font-weight: 500;
+    letter-spacing: -0.03rem;
+}
+
+.basic_box.info > .box > ul > li > span {
+    margin-right: 80px;
+    color: #888;
+    letter-spacing: 0.03rem;
+}
+
+.basic_box.info > ul > li > img {
+    width: 1.3rem;
+}
+
+.basic_box.contact ul {
+    margin-top: 30px;
+}
+
+.basic_box.contact ul li.contact_list{
+    margin-bottom: 8px;
+}
+
+.basic_box.contact ul li.contact_list:last-child{
+    margin-bottom: 0;
+}
+
+.basic_box.contact ul li.contact_list span{
+    position: relative;
+    top: -0.45rem;
+    margin-left: 0.45rem;
+    color: #222;
+}
+
+
+
+
+

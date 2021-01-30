@@ -1,0 +1,78 @@
+.sec_tit_concept {
+    padding-top: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: 'Noto Sans KR';
+    font-weight: 700;
+    line-height: 1;
+}
+
+.my_cont .title_area + .sec_tit_concept {
+    padding-top: 0;
+}
+
+.basic_box {
+    border-top: 2px solid #444;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.basic_box > p {
+    padding: 32px 20px 34px;
+    color: #555;
+    letter-spacing: -0.06em;
+    line-height: 28px;
+}
+
+.basic_box > .box {
+    height: 265px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.basic_box > .box .level {
+    float: left;
+    position: relative;
+    height: 200px;
+    padding: 65px 0 0 190px;
+    overflow: hidden;
+}
+
+.basic_box > .box .level img {
+    position: absolute;
+    left: 60px;
+    top: 57px;
+}
+
+.basic_box > .box .level strong {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1;
+}
+
+.basic_box > .box .level p {
+    margin-top: 15px;
+    color: #777;
+    letter-spacing: -0.04em;
+    line-height: 20px;
+}
+
+.basic_box > .box .level span {
+    display: block;
+    margin-top: 6px;
+    padding-left: 14px;
+    background: url(https://image.nbkorea.com/NBRB_PC/my/bg_bullet_arrow.png) no-repeat 0 4px;
+    color: #555;
+    letter-spacing: -0.04em;
+    line-height: 1;
+}
+
+.basic_box > .box > ul {
+    padding: 54px 0 0 540px;
+}
+
+.basic_box > .box > ul > li {
+    color: #555;
+    letter-spacing: -0.04em;
+    line-height: 28px;
+}
