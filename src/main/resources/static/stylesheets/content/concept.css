@@ -76,3 +76,13 @@
     letter-spacing: -0.04em;
     line-height: 28px;
 }
+
+.basic_box > .box > ul > li > em{
+    font-weight: 500;
+    color: #cf0a2c;
+}
+
+.basic_box > .box > ul > li > em.black{
+    font-weight: 500;
+    color: #232323;
+}

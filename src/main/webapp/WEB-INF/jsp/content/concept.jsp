@@ -53,9 +53,9 @@
                                 <span><a href="/login">바로가기</a></span>
                             </div>
                             <ul>
-                                <li>폼 우측에 [비밀번호 변경]을 포함하고 있습니다.</li>
-                                <li>[관리자]로 로그인 시 상품업로드 및 게시글등록을 할 수 있습니다.</li>
-                                <li class="plus_info">※ 관리자 email/password : admin@sample.com/test</li>
+                                <li>- 폼 우측에 [비밀번호 변경]을 포함하고 있습니다.</li>
+                                <li>- [관리자]로 로그인 시 상품업로드 및 게시글등록이 가능합니다.</li>
+                                <li class="plus_info"><em style="color: #cf0a2c; font-weight: 500">※ 관리자 email/password : admin@sample.com/test</em></li>
                             </ul>
                         </div>
                         <div class="box">
@@ -66,8 +66,8 @@
                                 <span><a href="/register">바로가기</a></span>
                             </div>
                             <ul>
-                                <li>각 항목별 정규화 검사를 합니다.</li>
-                                <li>회원가입 완료 시 메인 페이지로 이동합니다.</li>
+                                <li>- 각 항목별 정규화 검사를 합니다.</li>
+                                <li>- 회원가입 완료 시 메인 페이지로 이동합니다.</li>
                             </ul>
                         </div>
                         <div class="box">
@@ -93,9 +93,11 @@
                                 <span><a href="/product">바로가기</a></span>
                             </div>
                             <ul>
-                                <li>[관리자]로 로그인 시 상품업로드를 할 수 있습니다.</li>
-                                <li>상품 사진 클릭 시 상세정보(팝업창)를 확인할 수 있습니다.</li>
-                                <li>팝업창에서 해당 상품을 장바구니에 담을 수 있습니다. </li>
+                                <li>- 상품 사진 클릭 시 상세정보(팝업창)를 확인할 수 있습니다.</li>
+                                <li>- 팝업창에서 해당 상품을 장바구니에 담을 수 있습니다. </li>
+                                <li>- [관리자]로 로그인 시 상품업로드를 할 수 있습니다.</li>
+                                <li><em class="black" style="font-weight: 500; color: #232323;">※ DB에서 이미지를 불러오는 과정이 10초간 소요됩니다.</em></li>
+                                <li class="plus_info"><em style="color: #cf0a2c; font-weight: 500">※ 관리자 email/password : admin@sample.com/test</em></li>
                             </ul>
                         </div>
                         <div class="box">
@@ -106,8 +108,8 @@
                                 <span><a href="/mybasket">바로가기</a></span>
                             </div>
                             <ul>
-                                <li>[로그인] 해야만 해당 페이지로 이동합니다.</li>
-                                <li>장바구니 상품을 개별/전체 삭제할 수 있습니다.</li>
+                                <li>- [로그인] 해야만 해당 페이지로 이동합니다.</li>
+                                <li>- 장바구니 상품을 개별/전체 삭제할 수 있습니다.</li>
                             </ul>
                         </div>
                         <div class="box">
@@ -118,9 +120,10 @@
                                 <span><a href="/board">바로가기</a></span>
                             </div>
                             <ul>
-                                <li>[관리자]로 로그인 시 게시글등록을 할 수 있습니다.</li>
-                                <li>각 항목 클릭 시 내용을 확일 할 수 있습니다.</li>
-                                <li class="plus_info">※ 관리자 email/password : admin@sample.com/test</li>
+                                <li>- 게시글 제목을 클릭하면 내용을 확일 할 수 있습니다.</li>
+                                <li>- [관리자]로 로그인 시 게시글등록을 할 수 있습니다.</li>
+                                <li><em class="black" style="font-weight: 500; color: #232323;">※ DB에서 이미지를 불러오는 과정이 10초간 소요됩니다.</em></li>
+                                <li class="plus_info"><em style="color: #cf0a2c; font-weight: 500">※ 관리자 email/password : admin@sample.com/test</em></li>
                             </ul>
                         </div>
                         <div class="box">
@@ -131,8 +134,8 @@
                                 <span><a href="/faq">바로가기</a></span>
                             </div>
                             <ul>
-                                <li>검색 기능을 통해 내용을 확인할 수 있습니다.</li>
-                                <li>각 항목 클릭 시 내용을 확일 할 수 있습니다.</li>
+                                <li>- 검색 기능을 통해 내용을 확인할 수 있습니다.</li>
+                                <li>- 각 항목 클릭 시 내용을 확일 할 수 있습니다.</li>
                             </ul>
                         </div>
                         <div class="box">
@@ -143,8 +146,8 @@
                                 <span><a href="/mypage">바로가기</a></span>
                             </div>
                             <ul>
-                                <li>[로그인] 해야만 해당 페이지로 이동합니다.</li>
-                                <li>[회원정보변경] 과 [1:1 문의] 기능을 포함하고 있습니다.</li>
+                                <li>- [로그인] 해야만 해당 페이지로 이동합니다.</li>
+                                <li>- [회원정보변경] 과 [1:1 문의] 기능을 포함하고 있습니다.</li>
                             </ul>
                         </div>
                         <div class="box">
@@ -155,9 +158,9 @@
                                 <span><a href="/qna">바로가기</a></span>
                             </div>
                             <ul>
-                                <li>[마이페이지]를 통해 해당 페이지로 이동할 수 있습니다.</li>
-                                <li>[로그인] 해야만 해당 페이지로 이동합니다.</li>
-                                <li>하단의 [1:1 문의 작성] 버튼으로 문의글을 등록 할 수 있습니다.</li>
+                                <li>- [로그인] 해야만 해당 페이지로 이동합니다.</li>
+                                <li>- [마이페이지]를 통해 해당 페이지로 이동할 수 있습니다.</li>
+                                <li>- 하단의 [1:1 문의 작성] 버튼으로 문의글을 등록 할 수 있습니다.</li>
                             </ul>
                         </div>
                     </div>

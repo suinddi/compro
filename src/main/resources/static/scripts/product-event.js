@@ -48,7 +48,7 @@ function getItems(pageNumber) {
     }
 
     function callback(response) {
-        let itemList = window.document.body.querySelector("#item-list");
+        // let itemList = window.document.body.querySelector("#item-list");
         let ulList = window.document.body.querySelector("#ulList");
         ulList.innerHTML = "";
 
@@ -63,7 +63,7 @@ function getItems(pageNumber) {
             let page = window.document.createElement("div");
             page.classList.add("object-page-number-button");
             page.innerText = i;
-            if (i == requestPage) {
+            if (i === requestPage) {
                 page.classList.add("selected");
             } else {
                 page.addEventListener("click", function () {
@@ -154,20 +154,14 @@ function getItems(pageNumber) {
                             if (!prodOptAdd.classList.contains("hidden")) {
                                 prodOptAdd.classList.add("hidden");
                                 productCount.value = "1";
-                                productAddButton.classList.remove("disabled");
-                                productSubtractButton.classList.remove("disabled");
-                                console.log("dfdf");
                             } else {
                                 prodOptAdd.classList.remove("hidden");
-                                productPrice.innerText = '0 ';
                             }
                             productSize[j].checked = false;
+                            totalPrice.innerText = '0 ';
                         };
                     });
                 }
-
-                //장바구니 결과 팝업 창 아이템 정보
-
             });
 
             li.append(liA);
@@ -189,16 +183,16 @@ function getItems(pageNumber) {
         let prodOptAdd = window.document.body.querySelector("#prodOptAdd");
 
         clickForm.addEventListener("click", function () {
-            if (clickForm.elements["pr_color"].value === "" | clickForm.elements["pr_size"].value === "") {
-                console.log("색상, 사이즈 선택하세요.");
+            if (clickForm.elements["pr_color"].value === "" || clickForm.elements["pr_size"].value === "") {
                 prodOptAdd.classList.add("hidden");
             } else {
                 prodOptAdd.classList.remove("hidden");
+                productSubtractButton.classList.add("disabled");
+                totalPrice.innerText = productPrice.innerText + ' ';
             }
         });
 
         // 장바구니 아이템 정보
-        let basketIndex = window.document.querySelector('input[name="basket_index"]');
         let productName = window.document.querySelector('input[name="pr_name"]');
         let productIndex = window.document.querySelector('input[name="pr_index"]');
         let productCode = window.document.querySelector('input[name="pr_code"]');
@@ -207,6 +201,7 @@ function getItems(pageNumber) {
         let productSizeFin;
         let productCount = window.document.querySelector('input[name="pr_count"]');
         let productPrice = window.document.querySelector("#prodPrice");
+        let totalPrice = window.document.body.querySelector("#totPrice");
 
         // 사이즈 수량 증가,감소
         let productAddButton = window.document.querySelector("#btnPlus");
@@ -220,8 +215,7 @@ function getItems(pageNumber) {
                     productCount.value = count;
                     productSubtractButton.classList.remove("disabled");
                     productPrice.innerText = totPrice * count;
-
-                    console.log(count + " x " + totPrice);
+                    totalPrice.innerText = productPrice.innerText + ' ';
                     if (count === 5) {
                         productAddButton.classList.add("disabled");
                     }
@@ -230,18 +224,18 @@ function getItems(pageNumber) {
 
             productSubtractButton.addEventListener("click", function () {
                 let totPrice = window.document.body.querySelector("#item-price").innerText;
-
                 if (!productSubtractButton.classList.contains("disabled")) {
                     let count = parseInt(productCount.value) - 1;
                     productCount.value = count;
                     productAddButton.classList.remove("disabled");
-                    productPrice.innerText = totPrice * count
-                    if (count === 1)
+                    productPrice.innerText = totPrice * count;
+                    totalPrice.innerText = productPrice.innerText + ' ';
+                    if (count === 1) {
                         productSubtractButton.classList.add("disabled");
+                    }
                 }
             });
         }
-
         calPriceEvents();
 
         //장바구니로 이동
@@ -291,7 +285,7 @@ function getItems(pageNumber) {
         });
     }
 
-    function fallback(status) {
+    function fallback() {
         alert("예상치 못한 오류가 발생했습니다.");
     }
 
