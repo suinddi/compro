@@ -15,7 +15,7 @@
 
 <div class="wrap">
     <%@include file="../header.jsp" %>
-    <div class="container" style="padding-top: 0px;">
+    <div class="container" style="padding-top: 0;">
         <div class="contents">
             <!-- my_wrap -->
             <div class="my_wrap">
